@@ -1,0 +1,489 @@
+*{
+margin:0;
+padding:0;
+}
+
+body{
+margin:0;
+padding:0;
+background-color:white;
+}
+
+/* preloader */
+.preloaderback{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-color:white;
+z-index:9999;
+}
+.preloader{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+z-index:99999;
+overflow:hidden;
+}
+.preloader div{
+border-radius:50%;
+width:100px;
+height:100px;
+border:2px solid white;
+border-top:2px solid blue;
+border-bottom:2px solid blue;
+animation: preload 2s linear infinite;
+}
+@keyframes preload{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+.preloader2{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+z-index:99999;
+overflow:hidden;
+}
+.p{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+z-index:99999;
+font-weight:bold;
+}
+.preloader2 div{
+border-radius:50%;
+width:60px;
+height:60px;
+border:2px solid white;
+border-top:2px solid green;
+border-bottom:2px solid green;
+animation: preload2 1s linear infinite;
+}
+@keyframes preload2{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(-360deg);}
+}
+
+/* video */
+#myVideo{
+width:80%;
+border:1px solid white;
+}
+.video-container {
+width:100%;
+text-align:center;
+z-index:11;
+position:absolute;
+bottom:10%;
+}
+
+/* scroll to top */
+.scrolltop{
+position:fixed;
+bottom:0;
+right:0;
+margin:10px;
+width:40px;
+height:40px;
+background-color:black;
+opacity:0.8;
+border-radius:10px;
+display:none;
+overflow:hidden;
+}
+.scrolltop div{
+width:0;
+height:0;
+border-left:8px solid transparent;
+border-right:8px solid transparent;
+border-bottom:15px solid white;
+position:relative;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+}
+
+/* hero div container */
+.hero{
+width:100%;
+height:100vh;
+background:linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(img/men-croped.jpg);
+background-size:cover;
+background-attachment:fixed;
+}
+.hero-text{
+position:absolute;
+color:white;
+top:35%;
+transform:translate(0, -50%);
+z-index:12;
+width:100%;
+}
+.hero-h1{
+padding-left:10px;
+margin:0px;
+font-size:60px;
+border-inline-start:3px solid yellow;
+}
+.hero-p{
+padding-left:10px;
+margin:0px;
+width:60%;
+font-size:30px;
+border-inline-start:3px solid yellow;
+}
+.hero-insta{
+padding-left:10px;
+margin:0px;
+font-size:20px;
+border-inline-start:3px solid yellow;
+}
+
+/* navbar */
+.sliding-menu{
+position:fixed;
+top:0;
+left:0;
+width:0;
+height:100%;
+background-color:black;
+color:white;
+margin:0;
+padding:0px;
+overflow:hidden;
+z-index:999;
+}
+.sliding-menu-inner {
+width:100%;
+height:100%;
+background-color:black;
+color:white;
+margin:0;
+padding:0px;
+overflow:hidden;
+}
+.inner{
+padding: 10px;
+}
+.cross1{
+margin:0;
+padding:0;
+background-color:white;
+width:20px;
+height:2px;
+transform:rotate(45deg);
+position: absolute;
+right:5%;
+margin-top:15px;
+}
+.cross2{
+margin:0;
+padding:0;
+background-color:white;
+width:20px;
+height:2px;
+transform:rotate(-45deg);
+position: absolute;
+right:5%;
+margin-top:15px;
+}
+.menubutdiv{
+position:fixed;
+top:0;
+z-index:999;
+padding:5px 10px 2.5px 10px;
+margin:10px;
+border-radius:5px;
+}
+.menubutdiv div{
+margin-top:2.5px;
+margin-bottom:5px;
+background-color:white;
+width:20px;
+height:2px;
+}
+.menubutdiv2{
+position:fixed;
+top:0;
+z-index:999;
+padding:5px 10px 2.5px 10px;
+background-color:white;
+margin:10px;
+border-radius:5px;
+}
+.menubutdiv2 div{
+margin-top:2.5px;
+margin-bottom:5px;
+background-color:black;
+width:20px;
+height:2px;
+}
+.pimage{
+width:150px;
+height:150px;
+border-radius:50%;
+border-style:solid;
+border-color:white;
+}
+.opacitydiv{
+opacity:0;
+width:100%;
+height:100%;
+}
+
+/* option div */
+.option{
+max-width:80%;
+margin:auto;
+text-align:center;
+padding:10px 0px;
+}
+.option h2{
+font-size:30px;
+margin-top:20px;
+}
+.option div{
+margin-bottom:20px;
+margin-top:20px;
+}
+.option div h3{
+font-weight:bold;
+font-size:25px;
+}
+.option div p{
+font-weight:bold;
+}
+.option div img{
+width:100%;
+height:auto;
+border-radius:10px;
+}
+
+/* Register div */
+.register{
+width:100%;
+height:auto;
+background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)), url(img/rider-croped.jpg);
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+.register form{
+max-width:80%;
+margin:auto;
+}
+.register form input{
+width:100%;
+max-width:90%;
+padding:10px 10px;
+border:1px solid white;
+border-radius:5px;
+background: transparent;
+color: white;
+}
+.register form input:focus{
+outline:none;
+border:1px solid red;
+box-shadow:inset 1px 1px 5px red;
+box-shadow:1px 1px 3px red;
+}
+.register form label{
+display:block;
+margin-top:10px;
+color:white;
+font-weight:bold;
+}
+.register form button{
+padding:10px 12px;
+border-radius:5px;
+border: solid red;
+background-color:red;
+color:white;
+font-weight:bold;
+}
+.register h2{
+color:white;
+font-weight:bold;
+max-width:80%;
+margin:auto;
+}
+.register h3{
+color:white;
+font-weight:bold;
+max-width:80%;
+margin:auto;
+}
+
+/* Corosal div */
+.corosal{
+width:100%;
+height:auto;
+background-color:white;
+color:black;
+}
+.corosal h2{
+max-width:80%;
+margin:auto;
+text-align:center;
+font-size:30px;
+}
+.corosal h3{
+max-width:80%;
+margin:auto;
+text-align:center;
+font-weight:bold;
+margin-bottom:20px;
+}
+.corosal div{
+width:100%;
+overflow:hidden;
+max-width:80%;
+margin:auto;
+border:4px solid black;
+}
+.corosal div img{
+width:100%;
+height:210px;
+}
+.corosal p{
+max-width:80%;
+margin:auto;
+text-align:justify;
+margin-top:20px;
+color:grey;
+}
+
+/* Contact div */
+.apply{
+width:100%;
+height:auto;
+padding:40px 00px 40px 00px;
+color:white;
+background:linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(img/bikini_blue.jpg);
+background-size:cover;
+}
+.apply div{
+max-width:80%;
+margin:auto;
+}
+.apply div h2, p{
+padding: 00px 00px 10px 00px;
+}
+.apply div h2{
+font-size:25px;
+}
+.apply div p{
+font-size:18px;
+}
+.apply div button{
+padding:10px 20px;
+border:1px solid white;
+background:transparent;
+color:white;
+}
+.apply div button:hover{
+background-color:white;
+color:black;
+outline:none;
+}
+
+/* About div */
+.about{
+width:100%;
+height:auto;
+background: white;
+}
+.about h2{
+max-width:80%;
+margin:auto;
+text-align:center;
+font-size:30px;
+}
+.about h3{
+max-width:80%;
+margin:auto;
+text-align:center;
+font-weight:bold;
+margin-bottom:20px;
+}
+.about p{
+max-width:80%;
+margin:auto;
+text-align:justify;
+margin-top:20px;
+color:grey;
+}
+
+/* Contact div */
+.contact{
+width:100%;
+height:auto;
+background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)), url(img/model.jpeg);
+background-size:cover;
+background-position:left;
+background-attachment:fixed;
+}
+.contact form{
+max-width:80%;
+margin:auto;
+}
+.contact form input{
+width:100%;
+max-width:90%;
+padding:10px 10px;
+border:1px solid white;
+border-radius:5px;
+background: transparent;
+color: white;
+}
+.contact form input:focus{
+outline:none;
+border:1px solid red;
+box-shadow:inset 1px 1px 5px red;
+box-shadow:1px 1px 3px red;
+}
+.contact form label{
+display:block;
+margin-top:10px;
+color:white;
+font-weight:bold;
+}
+.contact form button{
+padding:10px 12px;
+border-radius:5px;
+border: solid red;
+background-color:red;
+color:white;
+font-weight:bold;
+}
+.contact h2{
+color:white;
+font-weight:bold;
+max-width:80%;
+margin:auto;
+}
+.contact h3{
+color:white;
+font-weight:bold;
+max-width:80%;
+margin:auto;
+}
+
+/* footer */
+.footer{
+background-color:black;
+padding:20px 0px 20px 0px;
+color:white;
+}
+.footer p{
+max-width:80%;
+margin:auto;
+text-align:center;
+font-size:small;
+}

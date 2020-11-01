@@ -1,3 +1,9 @@
+/*
+File name = pratik.js
+Written by = Pratik Thombre (Pratik GT)
+*/
+
+/* All on body load events */
 window.onload = function()
 {
 document.getElementById("preloader").style.display="none";
@@ -8,7 +14,9 @@ runningText();
 setTimeout(runningTextP, 800);
 setTimeout(runningTextI, 2500);
 }
+/* ! All on body load events */
 
+/* All on body scroll events */
 window.onscroll = function ()
 {
 if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 100)
@@ -22,6 +30,7 @@ document.getElementById("scroll").style.display="none";
 document.getElementById("menu").setAttribute("class", "menubutdiv");
 }
 }
+/* ! All on body scroll events */
 
 function out()
 {
@@ -44,11 +53,14 @@ opa.style.transition = "0.2s";
 opa.style.opacity = "0";
 }
 
+/* Scroll top button */
 function scrolltotop()
 {
 window.scrollTo({top: 0, behavior: 'smooth'});
 }
+/* ! Scroll top button */
 
+/* Corosal (image slider) */
 var slides = document.getElementsByClassName("gtslides");
 var i=0;
 var j=1;
@@ -74,7 +86,9 @@ slides[i].style.display="none";
 slides[j-1].style.display="block";
 }
 setInterval(corosal, 1000);
+/* ! Corosal (image slider) */
 
+/* Running text h1 */
 var text_h1 = ["F", "a", "s", "h", "i", "o", "n"];
 var temp = "";
 var loop = 0;
@@ -93,7 +107,9 @@ document.getElementById("hero-h1").innerHTML=temp;
 loop = loop+1;
 runningText();
 }
+/* ! Running text h1 */
 
+/* Running text p */
 var text_p = ["R", "e", "a", "d", "y", " t", "o", " s", "h", "o", "w", " y", "o", "u", "r", " s", "w", "a", "g", " w", "i", "t", "h", " o", "u", "r", " f", "a", "s", "h", "i", "o", "n", "."];
 var temp2 = "";
 var loop2 = 0;
@@ -112,7 +128,9 @@ document.getElementById("hero-p").innerHTML=temp2;
 loop2 = loop2+1;
 runningTextP();
 }
+/* ! Running text p */
 
+/* Running text I */
 var text_i = ["#", "p", "r", "a", "t", "i", "k", "_", "g", "t", "_", "6", "1", "9", "2"];
 var temp3 = "";
 var loop3 = 0;
@@ -131,3 +149,4 @@ document.getElementById("hero-i").innerHTML=temp3;
 loop3 = loop3+1;
 runningTextI();
 }
+/* ! Running text I */
